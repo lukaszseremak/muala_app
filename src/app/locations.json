@@ -195,6 +195,36 @@
         "youtube_url": "https://www.youtube.com/watch?v=7qdO0k9Kseg"
     },
     {
+        "name": "Jagienka",
+        "dishes": [
+            "Naleśniki z serem i bitą śmietaną"
+        ],
+        "address": "Grunwaldzka 28, 25-727 Kielce",
+        "date": "11 Kwiecień 2023",
+        "google_maps_url": "https://www.google.com/maps/place/Jagienka/@50.8752933,20.5994473,17z/data=!3m1!4b1!4m6!3m5!1s0x471827e2ec186131:0xf5eabaef95372cb!8m2!3d50.8752899!4d20.6020222!16s%2Fg%2F1thg95vj?entry=ttu",
+        "youtube_url": "https://youtu.be/_TKvsZoqUEs?si=86L5G6RKhB3HTYtt"
+    },
+    {
+        "name": "Gorące I Pyszne Czebureki",
+        "dishes": [
+            "Czeburek"
+        ],
+        "address": "Księdza Bernarda Sychty 66, 84-140 Jastarnia",
+        "date": "25 Czerwca 2023",
+        "google_maps_url": "https://www.google.com/maps/dir//Ksi%C4%99dza+Bernarda+Sychty+66,+84-140+Jastarnia/@54.6986273,18.5985134,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x46fdaa4335f42695:0xc92bea9eadb37331!2m2!1d18.6808951!2d54.698643?entry=ttu",
+        "youtube_url": "https://youtu.be/schPJ7nZlJ4?si=RS_SIO_Ia5TdnuNL"
+    },
+    {
+        "name": "Bar Ara",
+        "dishes": [
+            "Naleśniki z serem"
+        ],
+        "address": "Księdza Bernarda Sychty 91, 84-140 Jastarnia",
+        "date": "25 Czerwca 2023",
+        "google_maps_url": "https://www.google.com/maps/dir//Bar+Ara,+Ksi%C4%99dza+Bernarda+Sychty+91,+84-140+Jastarnia/@54.7005648,18.6738012,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fdaa5b252edd0b:0x18ffc864997dc52!2m2!1d18.6763761!2d54.7005648!3e0?entry=ttu",
+        "youtube_url": "https://youtu.be/schPJ7nZlJ4?si=RS_SIO_Ia5TdnuNL"
+    },
+    {
         "name": "Taco Bell",
         "dishes": [
             "Quesadilla Beef"
