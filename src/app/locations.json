@@ -1,12 +1,12 @@
 [
     {
-        "name": "Esnaf Lokantasi (Esnaf Lokantasi Kebab)",
+        "name": "Esnaf Lokantasi Kebab",
         "dishes": [
             "Kebab - lawasz mieszany"
         ],
         "address": "Al. Jana Pawła II 46/48, 00-148 Warszawa",
         "date": "25 czerwca 2023",
-        "google_maps_url": "https://www.google.com/maps/dir/51.4830806,21.4336378/esnaf+Al.+Jana+Paw%C5%82a+II+46%2F48,+00-148+Warszawa/@51.8151752,20.4833038,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x471ecd63c96945fb:0xfee40c25e14a14c8!2m2!1d20.9931232!2d52.2430024?entry=ttu",
+        "google_maps_url": "https://www.google.pl/maps/dir//Esnaf+Lokantasi+Kebab,+al.+Jana+Paw%C5%82a+II+46%2F48,+00-148+Warszawa/@52.2430057,20.9905483,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd63c96945fb:0xfee40c25e14a14c8!2m2!1d20.9931232!2d52.2430024?entry=ttu",
         "youtube_url": "https://www.youtube.com/watch?v=TRRCMVDvm5Q"
     },
     {
