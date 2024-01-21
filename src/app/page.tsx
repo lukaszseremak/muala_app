@@ -29,12 +29,12 @@ export default function Home() {
       <div className="relative z-10 lg:right-1/4 bottom-20">
         <div className="flex flex-col">
           <div className="flex flex-row">
-            <h1 className="text-8xl font-bold text-dark_gray mb-8 font-['Yeseva_One']">
+            <h1 className="text-8xl text-dark_gray mb-8 font-yeseva_one">
               Wyszukaj
             </h1>
-            <img src="/muala.png" className="pl-4" />
+            <img src="/muala.png" className="w-64 h-32 pl-4" />
           </div>
-          <h1 className="text-8xl font-bold text-dark_gray mb-8 font-['Yeseva_One']">
+          <h1 className="text-8xl text-dark_gray mb-8 font-yeseva_one">
             w swoim mieście
           </h1>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="max-w-md ">
             <div className="relative">
               <Input
-                className="pl-10 pr-20 rounded-full "
+                className="pl-10 pr-20 rounded-full font-barlow"
                 placeholder="Wpisz nazwę miasta"
                 type="search"
                 value={inputVal}

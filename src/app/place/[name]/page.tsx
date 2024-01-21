@@ -1,11 +1,26 @@
 import { CopyText } from "@/app/ui/copy_text";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 import { promises as fs } from "fs";
 import Link from "next/link";
-import { YoutubeIcon, NavigationIcon } from "@/components/ui/icons";
+import { YoutubeIcon, NavigationIcon, StarIcon } from "@/components/ui/icons";
+import { Badge } from "@/components/ui/badge";
 
 interface Params {
   params: { name: string };
+}
+
+interface Restaurant {
+  name: string;
+  dishes: string[];
+  address: string;
+  date: string;
+  google_maps_url: string;
+  youtube_url: string;
 }
 
 export default async function Page({ params }: Params) {
@@ -13,10 +28,7 @@ export default async function Page({ params }: Params) {
     process.cwd() + "/src/app/locations.json",
     "utf8"
   );
-  const locations = JSON.parse(file);
-  console.log(locations);
-  console.log(params.name);
-  console.log(decodeURIComponent(params.name));
+  const locations: Restaurant[] = JSON.parse(file);
   const location_name = decodeURIComponent(params.name);
 
   const filteredRestaurants = locations.filter((restaurant) =>
@@ -24,28 +36,28 @@ export default async function Page({ params }: Params) {
   );
 
   return (
-    <div className="flex flex-col w-full max-w-md mx-auto">
-      <div className="mt-6 space-y-6">
-        {filteredRestaurants.map((restaurant, index) => (
+    <div className="flex flex-col w-full max-w-xl mx-auto">
+      <div className="mt-6 space-y-10">
+        {filteredRestaurants.map((restaurant, _) => (
           <Card key={restaurant.address}>
             <div className="flex flex-col items-center relative">
-              <div className="absolute bottom-2 right-2 flex gap-2">
-                <div className="bg-gray-300 dark:bg-gray-700 rounded-full p-2">
+              <div className="absolute bottom-2 right-2 flex gap-2 flex-row">
+                <div className="rounded-full p-2 flex bg-grayish_pink">
                   <Link href={restaurant.google_maps_url} target="_blank">
-                    <NavigationIcon className="w-6 h-6 text-gray-500 dark:text-gray-400" />
+                    <NavigationIcon className="w-6 h-6 " />
                   </Link>
                 </div>
-                <div className="bg-gray-300 dark:bg-gray-700 rounded-full p-2">
+                <div className="rounded-full bg-grayish_pink p-2 flex">
                   <CopyText
                     content={`${restaurant.name}, ${restaurant.address}`}
                   ></CopyText>
                 </div>
               </div>
               <img
-                alt="Restaurant Image"
-                className="w-24 h-24 rounded-full object-cover mt-4"
+                alt="Ksiazulo Pin"
+                className="w-32 h-32 rounded-full object-cover mt-4"
                 height={100}
-                src="/logo.jpeg"
+                src="/ksiazulo_pin.png"
                 style={{
                   aspectRatio: "100/100",
                   objectFit: "cover",
@@ -53,16 +65,22 @@ export default async function Page({ params }: Params) {
                 width={100}
               />
               <CardContent className="flex flex-col items-center gap-2 mt-4">
-                <h3 className="font-semibold text-lg">{restaurant.name}</h3>
-                <p className="text-sm">{restaurant.dishes.join(", ")}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  {restaurant.address}
-                </p>
-                <Link
-                  className="text-blue-500 underline"
-                  href={restaurant.youtube_url}
-                >
-                  <YoutubeIcon className="w-6 h-6 text-blue-500" />
+                <CardTitle>{restaurant.name}</CardTitle>
+                <CardDescription>
+                  <u>{restaurant.address}</u>
+                </CardDescription>
+                <Badge>
+                  <StarIcon className="text-muala fill-muala" />
+                  <p className="px-0.5 font-piazzolla">POZYCJA MUALA</p>
+                  <StarIcon className="text-muala fill-muala" />
+                </Badge>
+                {restaurant.dishes.map((dish, _) => (
+                  <p className="text-sm font-montserrat" key={dish}>
+                    {dish.toUpperCase()}
+                  </p>
+                ))}
+                <Link href={restaurant.youtube_url} target="_blank">
+                  <YoutubeIcon className="w-12 h-12 text-[#FF0000]" />
                 </Link>
               </CardContent>
             </div>
