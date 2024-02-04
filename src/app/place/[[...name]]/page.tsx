@@ -1,4 +1,4 @@
-import { CopyText } from "@/app/ui/copy_text";
+import { CopyText } from "@/components/copy_text";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
