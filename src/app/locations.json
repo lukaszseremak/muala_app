@@ -225,6 +225,16 @@
         "youtube_url": "https://youtu.be/schPJ7nZlJ4?si=RS_SIO_Ia5TdnuNL"
     },
     {
+        "name": "Bistro Bar 13",
+        "dishes": [
+            "Sałatka Cezar z kurczakiem"
+        ],
+        "address": "Bracka 9, 00-501 Warszawa",
+        "date": "19 Marzec 2023",
+        "google_maps_url": "https://www.google.com/maps/dir//Bracka+9,+00-501+Warszawa/@52.2304109,20.9366272,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471eccf1357120ed:0x137c05244e12c478!2m2!1d21.0190274!2d52.2304396?hl=en&entry=ttu",
+        "youtube_url": "https://youtu.be/9Gv7odI0gmk?si=WeOaPuuTHWdyPDT-"
+    },
+    {
         "name": "Taco Bell",
         "dishes": [
             "Quesadilla Beef"
