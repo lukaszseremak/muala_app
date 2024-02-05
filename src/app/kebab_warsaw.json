@@ -1,0 +1,304 @@
+[
+    {
+        "name": "Chata Wariatta",
+        "dishes": [
+            "Placek kraftowy z frytkmi i serem, wołowina/kurczak"
+        ],
+        "address": "Gorzykowska 5A, 03-552 Warszawa",
+        "rating": 9.9,
+        "google_maps_url": "https://www.google.com/maps/dir//Gorzykowska+5A,+03-552+Warszawa/@52.2694691,20.9761053,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecc28936e2951:0x45013959622294b!2m2!1d21.0585055!2d52.2694978?entry=ttuyy",
+        "youtube_url": "https://www.youtube.com/watch?v=hAayNiQyxfw"
+    },
+    {
+        "name": "Sirin Bodrum Döner Kebab",
+        "dishes": [
+            "Lawasz wołowina",
+            "Lawasz kurczak"
+        ],
+        "address": "al. Jana Pawła II 18, 00-116 Warszawa",
+        "rating": 9.3,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+18,+00-116+Warszawa/@52.2338888,20.9161657,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd3f1dc04e13:0x61df34b43a6bed1a!2m2!1d20.9985659!2d52.2339175?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=m3MOkp6LSvc"
+    },
+    {
+        "name": "Esnaf Lokantasi Kebab",
+        "dishes": [
+            "Lawasz wołowina-kurczak"
+        ],
+        "address": "al. Jana Pawła II 46/48, 00-148 Warszawa",
+        "rating": 9.1,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+46%2F48,+00-148+Warszawa/@52.2429737,20.910723,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd63c96945fb:0xfee40c25e14a14c8!2m2!1d20.9931232!2d52.2430024?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=TRRCMVDvm5Q"
+    },
+    {
+        "name": "Efes",
+        "dishes": [
+            "Lawasz wołowo-barani"
+        ],
+        "address": "Francuska 1, 03-906 Warszawa",
+        "rating": 9.0,
+        "google_maps_url": "https://www.google.com/maps/dir//Francuska+1,+03-906+Warszawa/@52.2316841,20.9731114,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecda9a10cc009:0xa482d6e565b4feed!2m2!1d21.0555116!2d52.2317128?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=TRRCMVDvm5Q&t=4s"
+    },
+    {
+        "name": "SEWA RESTAURACJA & KEBAB",
+        "dishes": [
+            "Lawasz baranina",
+            "Lawasz kurczak"
+        ],
+        "address": "al. Jana Pawła II 46/48/lokal 11, 00-148 Warszawa",
+        "rating": 8.9,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+46%2F48%2Flokal+11,+00-148+Warszawa/@52.242914,20.9107841,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd38a065c897:0x6432500e2ece3539!2m2!1d20.9931843!2d52.2429427?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=vMbkClf_-S4"
+    },
+    {
+        "name": "Sapko Kebab",
+        "dishes": [
+            "Lawasz wołowina-kurczak"
+        ],
+        "address": "al. Jana Pawła II 46/48, 00-148 Warszawa",
+        "rating": 8.5,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+46%2F48,+00-148+Warszawa/@52.2430146,20.9106899,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecc7dcf83c10b:0xd9bc87eb6d8a3f20!2m2!1d20.9930901!2d52.2430433?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=TRRCMVDvm5Q"
+    },
+    {
+        "name": "Piri-Piri Kebab Ursynów",
+        "dishes": [
+            "Lawasz wołowo-barani/kurczak"
+        ],
+        "address": "Aleja Komisji Edukacji Narodowej 88, 02-777 Warszawa",
+        "rating": 8.5,
+        "google_maps_url": "https://www.google.com/maps/dir//Aleja+Komisji+Edukacji+Narodowej+88,+02-777+Warszawa/@52.1575057,20.9511352,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x47193306e89f6b7d:0xcd0c755acd7abd71!2m2!1d21.0335354!2d52.1575344?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=m3MOkp6LSvc"
+    },
+    {
+        "name": "Kebabowski - Kraftowy Kebab Warszawa Wola",
+        "dishes": [
+            "Lawasz baranio-wołowe/kurczak"
+        ],
+        "address": "al. Jana Pawła II 41A, 01-001 Warszawa",
+        "rating": 8.5,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+41A,+01-001+Warszawa/@52.2425997,20.9098721,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd89d6e1a88b:0x5370bf6e3ceb97c8!2m2!1d20.9922723!2d52.2426284?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=vMbkClf_-S4"
+    },
+    {
+        "name": "Kura Warzyw Gemüse Kebab",
+        "dishes": [
+            "Lawasz kurczak"
+        ],
+        "address": "Jarosława Dąbrowskiego 15A/1, 02-558 Warszawa",
+        "rating": 8.1,
+        "google_maps_url": "https://www.google.com/maps/dir//Jaros%C5%82awa+D%C4%85browskiego+15A%2F1,+02-558+Warszawa/@52.2021482,20.9381045,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd3b2e973bd3:0xa1550a2a795252ee!2m2!1d21.0205047!2d52.2021769?hl=en&entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=m3MOkp6LSvc"
+    },
+    {
+        "name": "Stoisko gastronomiczne z kebabem z kurczaka",
+        "dishes": [
+            "Pita kurczak"
+        ],
+        "address": "Marywilska 44, 03-042 Warszawa",
+        "rating": 8.1,
+        "google_maps_url": "https://www.google.com/maps/dir/51.4830806,21.4336378/Marywilska+44,+03-042+Warszawa/@51.9016881,20.6864046,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x471ec9179d5ca35d:0x15cfc85512c5e6d3!2m2!1d21.0019546!2d52.3163444?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=LKNnb2Gizxc"
+    },
+    {
+        "name": "Harbi Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Aleja Krakowska 117A, 02-180 Warszawa",
+        "rating": 6.9,
+        "google_maps_url": "https://www.google.com/maps/dir//Aleja+Krakowska+117A,+02-180+Warszawa/@52.1778827,20.862628,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471933667eedc8c5:0x12ff1b459f87801a!2m2!1d20.9450282!2d52.1779114?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=Jq5XdRWaqMc"
+    },
+    {
+        "name": "Hadda Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Kościuszki 41G, 05-270 Marki",
+        "rating": 6.8,
+        "google_maps_url": "https://www.google.com/maps/dir//Ko%C5%9Bciuszki+41G,+05-270+Marki/@52.3213789,21.0048042,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecf70b9e3e4f7:0xa4d84e4d0c98eb4c!2m2!1d21.0872044!2d52.3214076?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=bzXo1Ex-hV8"
+    },
+    {
+        "name": "Kebab Super King",
+        "dishes": [
+            "Toritilla  wołowina/kurczak"
+        ],
+        "address": "al. Jana Pawła II 33A, 00-810 Warszawa",
+        "rating": 6.7,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+33A,+00-810+Warszawa/@52.2404366,20.9118857,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecdad6bfe84bb:0xf59092dbc080437!2m2!1d20.9942859!2d52.2404653?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=bzXo1Ex-hV8"
+    },
+    {
+        "name": "Zaib Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Dąbrowszczaków 10C, 03-484 Warszawa",
+        "rating": 6.7,
+        "google_maps_url": "https://www.google.com/maps/dir//D%C4%85browszczak%C3%B3w+10C,+03-484+Warszawa/@52.2615621,20.9487594,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x471ecda22e287a07:0x7c8cd5c857574f9e!2m2!1d21.0311596!2d52.2615908?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=Jq5XdRWaqMc"
+    },
+    {
+        "name": "Amrit JOY",
+        "dishes": [
+            "Tortillai wołowina/kurczak"
+        ],
+        "address": "Ludwika Kondratowicza 27/lok.U7, 03-285 Warszawa",
+        "rating": 6.5,
+        "google_maps_url": "https://www.google.com/maps/dir//Ludwika+Kondratowicza+27%2Flok.U7,+03-285+Warszawa/@52.293854,20.9541171,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x471eceb13b0043af:0x9f6a362ec7fdeb5e!2m2!1d21.0365173!2d52.2938827?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=hAayNiQyxfw"
+    },
+    {
+        "name": "KEBAB YUM YUM - WARSZAWA",
+        "dishes": [
+            "Pita wołowo-barania/kurczak"
+        ],
+        "address": "Josepha Conrada 15, 01-922 Warszawa",
+        "rating": 6.5,
+        "google_maps_url": "https://www.google.com/maps/dir//KEBAB+YUM+YUM+-+WARSZAWA,+Josepha+Conrada+15,+01-922+Warszawa/@52.2760999,20.9212883,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x471ecb131cfca22b:0xd366184a1a0f1969!2m2!1d20.9212559!2d52.2760993!3e0?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=bzXo1Ex-hV8"
+    },
+    {
+        "name": "MAX KEBAB",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Czumy 1a, 01-355 Warszawa",
+        "rating": 6.5,
+        "google_maps_url": "https://www.google.com/maps/dir//Czumy+1a,+01-355+Warszawa/@52.2369147,20.8307801,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecba7ba9ecdb1:0x58454e2100a3c0cf!2m2!1d20.9131803!2d52.2369434?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=LKNnb2Gizxc"
+    },
+    {
+        "name": "Kebab Habiba",
+        "dishes": [
+            "Toritilla  wołowo-barania/kurczak"
+        ],
+        "address": "Gen. Klemensa Stanisława Rudnickiego 10, 01-858 Warszawa",
+        "rating": 6.4,
+        "google_maps_url": "https://www.google.com/maps/dir//Gen.+Klemensa+Stanis%C5%82awa+Rudnickiego+10,+01-858+Warszawa/@52.2673394,20.864982,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecbb73e044a0b:0x54bf4b54596705db!2m2!1d20.9473822!2d52.2673681?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=bzXo1Ex-hV8"
+    },
+    {
+        "name": "Kebab \"U Karima\"",
+        "dishes": [
+            "Pita wołowina-kurczak"
+        ],
+        "address": "Jadźwingów 2, 02-697 Warszawa",
+        "rating": 5.7,
+        "google_maps_url": "https://www.google.com/maps/dir//Jad%C5%BAwing%C3%B3w+2,+02-697+Warszawa/@52.1705133,20.9225879,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47193366ed5b16d1:0xd02dade2ed351422!2m2!1d21.0049881!2d52.170542?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=m3MOkp6LSvc"
+    },
+    {
+        "name": "Kafra Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "al. Jana Pawła II 43a/18, 00-001 Warszawa",
+        "rating": 5.6,
+        "google_maps_url": "https://www.google.com/maps/place/Kafra+Kebab/@52.2431126,20.9919716,17z/data=!3m1!4b1!4m6!3m5!1s0x471ecc7dd887140d:0xcaeb2983d5aaeca0!8m2!3d52.2431126!4d20.9919716!16s%2Fg%2F11dxdzjlfs?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=vMbkClf_-S4"
+    },
+    {
+        "name": "Zahir Kebab",
+        "dishes": [
+            "Rollo wołowina/kurczak"
+        ],
+        "address": "aleja \"Solidarności\" 117, 00-140 Warszawa",
+        "rating": 5.5,
+        "google_maps_url": "https://www.google.com/maps/dir//aleja+%22Solidarno%C5%9Bci%22+117,+00-140+Warszawa/@52.2414082,20.9122388,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecd59a2e9e291:0xa2460f2dc57be8d8!2m2!1d20.994639!2d52.2414369?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=bzXo1Ex-hV8"
+    },
+    {
+        "name": "SHAHI KEBAB &GRILL",
+        "dishes": [
+            "Pita wołowina/kurczak"
+        ],
+        "address": "Ludwika Kondratowicza 37, 03-285 Warszawa",
+        "rating": 5.5,
+        "google_maps_url": "https://www.google.com/maps/dir//shahi+kebab+%26+grill+warszawa/@51.8837922,20.6864045,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecfcfb145ec5b:0x2e79bf53151ce95d!2m2!1d21.0446351!2d52.2927955?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=Jq5XdRWaqMc"
+    },
+    {
+        "name": "Kebab KING",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "al. Jana Pawła II 41A, 01-001 Warszawa",
+        "rating": 5.4,
+        "google_maps_url": "https://www.google.com/maps/dir//al.+Jana+Paw%C5%82a+II+41A,+01-001+Warszawa/@52.2428967,20.9097434,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecc7dd40d3ae1:0x212d39fedb096b7f!2m2!1d20.9921436!2d52.2429254?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=vMbkClf_-S4"
+    },
+    {
+        "name": "Box Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "aleja \"Solidarności\" 117/808, 00-140 Warszawa",
+        "rating": 5.3,
+        "google_maps_url": "https://www.google.com/maps/dir//Box+Kebab,+aleja+%22Solidarno%C5%9Bci%22+117%2F808,+00-140+Warszawa/@52.2415405,20.9945344,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x471ecdfade107231:0x7c301de8797ae8c5!2m2!1d20.9945344!2d52.2415405!3e0?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=vMbkClf_-S4"
+    },
+    {
+        "name": "Yazin Kebab",
+        "dishes": [
+            "Tortilla baranina/kurczak"
+        ],
+        "address": "Nowogrodzka 15/lok LU7, 00-511 Warszawa",
+        "rating": 5.0,
+        "google_maps_url": "https://www.google.com/maps/dir//Nowogrodzka+15%2Flok+LU7,+00-511+Warszawa/@52.2295144,20.9341138,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x47192bd5686f03d7:0xdb13e5f26aa543b2!2m2!1d21.016514!2d52.2295431?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=Jq5XdRWaqMc"
+    },
+    {
+        "name": "DoyDoy Grill House Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Ludwika Kondratowicza 25, 03-285 Warszawa",
+        "rating": 4.9,
+        "google_maps_url": "https://www.google.com/maps/dir//DOY+DOY+KEBAB,+Ludwika+Kondratowicza+25,+03-285+Warszawa/@52.2934613,21.0340118,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x471eceb13f59eb87:0xb4c1d8a1b80574a6!2m2!1d21.0340118!2d52.2934613!3e0?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=hAayNiQyxfw"
+    },
+    {
+        "name": "KEBAB GURU",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Chodecka 11, 03-350 Warszawa",
+        "rating": 4.8,
+        "google_maps_url": "https://www.google.com/maps/dir//KEBAB+GURU/@51.8435947,20.483304,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471eceb778ab5db3:0x3e89bb2bca87f5!2m2!1d21.0419639!2d52.2957642?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=hAayNiQyxfw"
+    },
+    {
+        "name": "Fenicja",
+        "dishes": [
+            "Tortilla wołowa"
+        ],
+        "address": "Francuska 41, 03-905 Warszawa",
+        "rating": 4.6,
+        "google_maps_url": "https://www.google.com/maps/dir//Francuska+41,+03-905+Warszawa/@52.2362239,20.9701314,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecdab8ab63d75:0xaf70e3e5ea791556!2m2!1d21.0525316!2d52.2362526?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=TRRCMVDvm5Q"
+    },
+    {
+        "name": "Layla Kebab",
+        "dishes": [
+            "Tortilla wołowina/kurczak"
+        ],
+        "address": "Bazyliańska 4F, 03-203 Warszawa",
+        "rating": 4.5,
+        "google_maps_url": "https://www.google.com/maps/dir//layla+kebab+bazylia%C5%84ska/@51.8405272,20.4833039,9z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ec952a6a03311:0x4927ef8375ff11ae!2m2!1d21.0198518!2d52.291238?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=hAayNiQyxfw"
+    },
+    {
+        "name": "Kebab Masha",
+        "dishes": [
+            "Pita wołowina/kurczak"
+        ],
+        "address": "Górczewska 231, 01-459 Warszawa",
+        "rating": 4.5,
+        "google_maps_url": "https://www.google.com/maps/dir//G%C3%B3rczewska+231,+01-459+Warszawa/@52.2387164,20.8221184,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471ecae11027bac3:0x5fe8f2a32354573e!2m2!1d20.9045186!2d52.2387451?entry=ttu",
+        "youtube_url": "https://www.youtube.com/watch?v=LKNnb2Gizxc"
+    }
+]
