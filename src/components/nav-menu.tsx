@@ -33,7 +33,7 @@ export default function NavMenu() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 justify-between mx-auto bg-opacity-100 border border-none shadow-2xl bg-light_gray ">
+    <nav className="fixed top-0 left-0 right-0 z-50 justify-between mx-auto bg-opacity-100 border border-none shadow-2xl bg-light_gray h-15">
       <div className="container flex py-4 items-center px-4 md:shrink-0">
         <Link
           href={"/"}
@@ -59,7 +59,7 @@ export default function NavMenu() {
           )}
         </div>
         <div className="hidden menu md:block md:w-auto" id="navbar">
-          <ul className="flex space-x-8 lg:space-x-16 xl:space-x-16 2xl:space-x-32 ml-8 xl:ml-64">
+          <ul className="flex space-x-8 lg:space-x-12 xl:space-x-24 2xl:space-x-36 pl-16 lg:pl-36">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink navItem={link} />
