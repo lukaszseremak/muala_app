@@ -1,6 +1,10 @@
+"use client";
 import MainForm from "@/components/main-form";
+import DistanceSlider from "@/components/slider";
+import { useState } from "react";
 
 export default function Home() {
+  const [sliderValue, setSliderValue] = useState(20);
   return (
     <>
       <div className="flex flex-row items-center justify-center w-screen h-screen md:flex-col">
@@ -28,7 +32,8 @@ export default function Home() {
               pozycję, określając je mianem "MUALA"
             </h1>
           </div>
-          <MainForm />
+          <MainForm sliderValue={sliderValue}/>
+          <DistanceSlider  sliderValue={sliderValue} setSliderValue={setSliderValue} />
         </div>
       </div>
     </>
