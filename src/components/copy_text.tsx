@@ -22,7 +22,7 @@ export function Match<T extends string | number | symbol>(
 
 type IconToShow = "copy" | "copied";
 
-export const CopyText = ({ content, ...rest }) => {
+export const CopyText = ({ content }: { content: string }) => {
   const [iconToShow, setIconToShow] = useState<IconToShow>("copy");
 
   return (
@@ -33,10 +33,8 @@ export const CopyText = ({ content, ...rest }) => {
         copy(content);
         setIconToShow("copied");
       }}
-      as="span"
-      {...rest}
     >
-      <div as="span">
+      <div>
         <Match
           value={iconToShow}
           copy={() => <CopyIcon />}

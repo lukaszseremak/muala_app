@@ -8,7 +8,10 @@ import { Input } from "@/components/ui/input";
 
 import DistanceSlider from "@/components/slider";
 
-export default function MainForm({ sliderValue, setSliderValue }) {
+export default function MainForm({// @ts-ignore
+  sliderValue, // @ts-ignore
+  setSliderValue,
+} ) {
   const [inputVal, setInputVal] = useState("");
   const { push } = useRouter();
   const handleSubmit = (event: FormEvent) => {

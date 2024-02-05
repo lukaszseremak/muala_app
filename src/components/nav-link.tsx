@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// @ts-ignore
 export default function NavLink({ navItem, setNavbarOpen }) {
     const handleClick = () => {
     // Close the navbar when a link is clicked

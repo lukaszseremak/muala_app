@@ -27,9 +27,9 @@ export default function Home() {
             <h1 className=" mb-2 text-xl text-dark_gray font-piazzolla text-center">
               Mapa zawiera lokalizację wszystkich odwiedzonych lokali przez
               <br />
-              Szymona "Książula" Nyczkę, w których rekomendował poszczególne
+              Szymona &quot;Książula&quot; Nyczkę, w których rekomendował poszczególne
               <br />
-              pozycję, określając je mianem "MUALA"
+              pozycję, określając je mianem &quot;MUALA&quot;
             </h1>
             <div className="place-content-center justify-center place-self-center">
               <MainForm sliderValue={sliderValue} setSliderValue={setSliderValue}/>
