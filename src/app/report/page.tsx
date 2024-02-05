@@ -70,7 +70,7 @@ export default function Page() {
           <div className="flex justify-center pt-0 lg:pt-48 px-4">
             <div className="max-w-7xl mx-auto p-6">
               <div className="flex flex-col lg:flex-row justify-between gap-10">
-                <div className="flex-1 space-y-6 pt-24 relative">
+                <div className="flex-1 space-y-6 pt-16 lg:pt-24 relative">
                   <img
                     className="hidden lg:block absolute middle-0 left-0 h-96 w-64 overflow-visible -z-10 transform -translate-x-8 translate-y-16"
                     height="100"

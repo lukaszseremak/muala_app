@@ -1,3 +1,6 @@
+"use client";
+import { useSearchParams } from "next/navigation";
+
 import { CopyText } from "@/components/copy_text";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -7,8 +10,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { NavigationIcon, StarIcon, YoutubeIcon } from "@/components/ui/icons";
-import { promises as fs } from "fs";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface Params {
   params: { name: string };
@@ -21,14 +24,23 @@ interface Restaurant {
   date: string;
   google_maps_url: string;
   youtube_url: string;
+  latitude: number;
+  longitude: number;
 }
 
 export default async function Page({ params }: Params) {
-  const file = await fs.readFile(
-    process.cwd() + "/src/app/locations.json",
-    "utf8"
-  );
-  const locations: Restaurant[] = JSON.parse(file);
+  const [locations, setLocations] = useState<Restaurant[]>([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/locations")
+      .then((res) => res.json())
+      .then((data) => {
+        setLocations(data.locations);
+      });
+  }, []);
+  const searchParams = useSearchParams();
+  console.log(searchParams.get("distance"));
+
   const location_name = decodeURIComponent(params.name);
 
   const restaurants = params.name
@@ -36,7 +48,6 @@ export default async function Page({ params }: Params) {
         restaurant.address.toLowerCase().includes(location_name.toLowerCase())
       )
     : locations;
-
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex flex-col w-full max-w-xl mx-auto pt-20 pb-8 px-4">

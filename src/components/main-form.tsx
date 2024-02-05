@@ -6,7 +6,9 @@ import { Button } from "@/components/ui/button";
 import { SearchIcon } from "@/components/ui/icons";
 import { Input } from "@/components/ui/input";
 
-export default function MainForm( {sliderValue} ) {
+import DistanceSlider from "@/components/slider";
+
+export default function MainForm({ sliderValue, setSliderValue }) {
   const [inputVal, setInputVal] = useState("");
   const { push } = useRouter();
   const handleSubmit = (event: FormEvent) => {
@@ -16,7 +18,10 @@ export default function MainForm( {sliderValue} ) {
 
   return (
     <>
-      <form className="flex items-center gap-2" onSubmit={handleSubmit}>
+      <form
+        className="flex items-center gap-2 place-content-center justify-center place-self-center pt-6"
+        onSubmit={handleSubmit}
+      >
         <div className="max-w-md ">
           <div className="relative">
             <Input
@@ -31,6 +36,19 @@ export default function MainForm( {sliderValue} ) {
               type="submit"
             >
               <SearchIcon className="w-16 h-16 text-white rounded-full bg-muala" />
+            </Button>
+            <DistanceSlider
+              sliderValue={sliderValue}
+              setSliderValue={setSliderValue}
+            />
+            <h1 className="pt-10 mb-8 text-2xl text-dark_gray font-piazzolla text-center">
+              LUB
+            </h1>
+            <Button
+              type="submit"
+              className="absolute bottom-0 transform translate-x-12 translate-y-20 w-64 h-12 rounded-full shadow-lg text-center text-medium_gray bg-[#f5c188] font-piazzolla"
+            >
+              wyświetl wszystko
             </Button>
           </div>
         </div>

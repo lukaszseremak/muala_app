@@ -38,6 +38,7 @@ export default function NavMenu() {
         <Link
           href={"/"}
           className="text-2xl font-semibold text-white md:text-4xl"
+          onClick={() => setNavbarOpen(false)}
         >
           <img src="/logo_app.png" className="flex max-h-10" alt="App Logo" />
         </Link>
@@ -62,13 +63,13 @@ export default function NavMenu() {
           <ul className="flex space-x-8 lg:space-x-12 xl:space-x-24 2xl:space-x-36 pl-16 lg:pl-36">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink navItem={link} />
+                <NavLink navItem={link} setNavbarOpen={setNavbarOpen}/>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay navLinks={navLinks} /> : null}
+      {navbarOpen ? <MenuOverlay navLinks={navLinks} setNavbarOpen={setNavbarOpen}  /> : null}
     </nav>
   );
 }
