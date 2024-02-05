@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button";
 import { SearchIcon } from "@/components/ui/icons";
 import { Input } from "@/components/ui/input";
 
-export default function MainForm() {
+export default function MainForm( {sliderValue} ) {
   const [inputVal, setInputVal] = useState("");
   const { push } = useRouter();
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    push(`/place/${inputVal}`);
+    push(`/place/${inputVal}?distance=${sliderValue}`);
   };
 
   return (
