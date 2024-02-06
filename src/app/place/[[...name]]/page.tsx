@@ -1,6 +1,3 @@
-"use client";
-import { useSearchParams } from "next/navigation";
-
 import { CopyText } from "@/components/copy_text";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -11,36 +8,30 @@ import {
 } from "@/components/ui/card";
 import { NavigationIcon, StarIcon, YoutubeIcon } from "@/components/ui/icons";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import prisma from "@/lib/prisma";
+import { Decimal } from "@prisma/client/runtime/library";
 
 interface Params {
   params: { name: string };
+  searchParams: { distance: string }
 }
 
 interface Restaurant {
   name: string;
-  dishes: string[];
+  dishes: string;
   address: string;
-  date: string;
+  date: Date;
   google_maps_url: string;
   youtube_url: string;
-  latitude: number;
-  longitude: number;
+  latitude: Decimal;
+  longitude: Decimal;
 }
 
-export default async function Page({ params }: Params) {
-  const [locations, setLocations] = useState<Restaurant[]>([]);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/api/locations")
-      .then((res) => res.json())
-      .then((data) => {
-        setLocations(data.locations);
-      });
-  }, []);
-  const searchParams = useSearchParams();
-  console.log(searchParams.get("distance"));
-
+export default async function Page({params, searchParams}: Params) {
+  console.log(params);
+  console.log(searchParams);
+  const locations: Restaurant[] = await prisma.location.findMany();
   const location_name = decodeURIComponent(params.name);
 
   const restaurants = params.name
@@ -50,7 +41,7 @@ export default async function Page({ params }: Params) {
     : locations;
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="flex flex-col w-full max-w-xl mx-auto pt-20 pb-8 px-4">
+      <div className="flex flex-col w-full max-w-xl mx-auto pt-4 pb-8 px-4">
         <div className="mt-6 space-y-10">
           {restaurants.map((restaurant, _) => (
             <Card key={restaurant.address}>
@@ -88,7 +79,7 @@ export default async function Page({ params }: Params) {
                     <p className="px-0.5 font-piazzolla">POZYCJA MUALA</p>
                     <StarIcon className="text-muala fill-muala" />
                   </Badge>
-                  {restaurant.dishes.map((dish, _) => (
+                  {restaurant.dishes.split(";").map((dish, _) => (
                     <p className="text-sm font-montserrat" key={dish}>
                       {dish.toUpperCase()}
                     </p>

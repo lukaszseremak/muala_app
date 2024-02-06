@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model kebab {
+  id              String  @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name            String  @db.VarChar(255)
+  dishes          String  @db.VarChar(255)
+  rating          Decimal @db.Decimal
+  address         String  @db.VarChar(255)
+  google_maps_url String  @db.VarChar(255)
+  youtube_url     String  @db.VarChar(255)
+}
+
+model location {
+  id              String   @id @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+  name            String   @db.VarChar(255)
+  dishes          String   @db.VarChar(255)
+  address         String   @db.VarChar(255)
+  date            DateTime @db.Date
+  google_maps_url String   @db.VarChar(255)
+  youtube_url     String   @db.VarChar(255)
+  latitude        Decimal  @db.Decimal
+  longitude       Decimal  @db.Decimal
+}

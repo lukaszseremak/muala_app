@@ -19,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body className={inter.className}>
-        <NavMenu />
-        {children}
+        <div className="h-24">
+          <NavMenu />
+        </div>
+        <div className="h-[calc(100vh-6rem)]">{children}</div>
       </body>
     </html>
   );

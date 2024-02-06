@@ -8,15 +8,17 @@ import { Input } from "@/components/ui/input";
 
 import DistanceSlider from "@/components/slider";
 
-export default function MainForm({// @ts-ignore
+export default function MainForm({
+  // @ts-ignore
   sliderValue, // @ts-ignore
   setSliderValue,
-} ) {
+}) {
   const [inputVal, setInputVal] = useState("");
   const { push } = useRouter();
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    push(`/place/${inputVal}?distance=${sliderValue}`);
+    const query = sliderValue ? `?distance=${sliderValue}` : "";
+    push(`/place/${inputVal}${query}`);
   };
 
   return (
@@ -48,6 +50,7 @@ export default function MainForm({// @ts-ignore
               LUB
             </h1>
             <Button
+              onClick={() => setSliderValue("")}
               type="submit"
               className="absolute bottom-0 transform translate-x-12 translate-y-20 w-64 h-12 rounded-full shadow-lg text-center text-medium_gray bg-[#f5c188] font-piazzolla"
             >
