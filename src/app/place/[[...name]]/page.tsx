@@ -7,13 +7,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { NavigationIcon, StarIcon, YoutubeIcon } from "@/components/ui/icons";
-import Link from "next/link";
+import { isWithinRadius } from "@/lib/distance";
+import { getCoordinates } from "@/lib/geoapify";
 import prisma from "@/lib/prisma";
 import { Decimal } from "@prisma/client/runtime/library";
+import Link from "next/link";
 
 interface Params {
   params: { name: string };
-  searchParams: { distance: string }
+  searchParams: { distance: string };
 }
 
 interface Restaurant {
@@ -27,18 +29,38 @@ interface Restaurant {
   longitude: Decimal;
 }
 
+async function getFilteredRestaurants(params, locations, searchParams) {
+  if (!params.name) {
+    console.log(
+      "params.name is empty. Unable to fetch coordinates or filter locations."
+    );
+    return locations;
+  }
 
-export default async function Page({params, searchParams}: Params) {
-  console.log(params);
-  console.log(searchParams);
+  const coordinates = await getCoordinates(params.name);
+  console.log(coordinates);
+
+  const restaurants = locations.filter((restaurant) =>
+    isWithinRadius(
+      coordinates.lat,
+      coordinates.lon,
+      restaurant.latitude,
+      restaurant.longitude,
+      +searchParams.distance
+    )
+  );
+
+  return restaurants;
+}
+
+export default async function Page({ params, searchParams }: Params) {
   const locations: Restaurant[] = await prisma.location.findMany();
-  const location_name = decodeURIComponent(params.name);
+  const restaurants = await getFilteredRestaurants(
+    params,
+    locations,
+    searchParams
+  );
 
-  const restaurants = params.name
-    ? locations.filter((restaurant) =>
-        restaurant.address.toLowerCase().includes(location_name.toLowerCase())
-      )
-    : locations;
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex flex-col w-full max-w-xl mx-auto pt-4 pb-8 px-4">
