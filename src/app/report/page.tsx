@@ -5,8 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { sendEmail } from "../actions";
+import { ReportMualaTemplate } from "@/components/email-template";
 
-export default function Page() {
+export default async function Page() {
   const [isSend, setIsSend] = useState(false);
   const router = useRouter();
 
@@ -14,7 +16,7 @@ export default function Page() {
     <div className="flex min-h-screen flex-col">
       <div className="px-12">
         {isSend ? (
-          <div className="flex flex-col w-full max-w-xl mx-auto pt-36 px-4">
+          <div className="flex flex-col max-w-xl mx-auto pt-36 px-4">
             <div className="mt-6 space-y-10 relative">
               <Card className="w-full flex flex-col justify-center items-center relative">
                 <img
@@ -121,18 +123,38 @@ export default function Page() {
                     </CardHeader>
                     <hr className="w-3/6 border-black mx-auto pb-2" />
                     <CardContent className="self-center pt-4 pb-12">
-                      <form className="space-y-4 self-center justify-center items-center">
+                      <form
+                        className="space-y-4 self-center justify-center items-center"
+                        action={(form) =>
+                          sendEmail(
+                            form.get("subject"),
+                            ReportMualaTemplate({
+                              local_name: form.get("local_name") as string,
+                              city: form.get("city") as string,
+                              url: form.get("url") as string,
+                            })
+                          )
+                        }
+                      >
                         <Input
                           className="bg-white rounded-full w-96 h-12"
                           placeholder="Wpisz nazwę lokalu"
+                          name="local_name"
                         />
                         <Input
                           className="bg-white rounded-full w-96 h-12"
                           placeholder="Wpisz nazwę miasta"
+                          name="city"
                         />
                         <Input
                           className="bg-white rounded-full w-96 h-12"
                           placeholder="Wklej link do filmu"
+                          name="url"
+                        />
+                        <input
+                          type="hidden"
+                          name="subject"
+                          value="Report Missing Muala"
                         />
                         <Button
                           type="submit"

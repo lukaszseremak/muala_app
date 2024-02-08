@@ -54,8 +54,12 @@ async function getFilteredRestaurants(params, locations, searchParams) {
 }
 
 export default async function Page({ params, searchParams }: Params) {
-  const locations: Restaurant[] = await prisma.location.findMany();
-  const restaurants = await getFilteredRestaurants(
+  const locations: Restaurant[] = await prisma.location.findMany({
+    orderBy: {
+      date: "desc",
+    },
+  });
+  const restaurants: Restaurant[] = await getFilteredRestaurants(
     params,
     locations,
     searchParams

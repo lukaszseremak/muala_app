@@ -1,19 +1,20 @@
 "use client";
-
+import { FeedbackTemplate } from "@/components/email-template";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { sendEmail } from "../actions";
 
-export default function Page() {
+export default async function Page() {
   const [isSend, setIsSend] = useState(false);
   const router = useRouter();
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex max-w-xl mx-auto">
       {isSend ? (
-        <div className="flex flex-col w-full max-w-xl mx-auto pt-36">
+        <div className="flex flex-col max-w-xl mx-auto pt-36">
           <div className="mt-6 space-y-10 relative">
             <Card className="flex flex-col justify-center items-center relative mx-12 lg:w-full">
               <img
@@ -67,10 +68,10 @@ export default function Page() {
           </div>
         </div>
       ) : (
-        <div className="flex justify-center pt-0 lg:pt-48 px-16">
-          <div className="max-w-7xl mx-auto p-6">
+        <div className="pt-0 lg:pt-48">
+          <div>
             <div className="flex flex-col lg:flex-row justify-between gap-10">
-              <div className="flex-1 space-y-6 pt-12 lg:pt-24 relative">
+              <div className="flex-1 space-y-6 pt-12 lg:pt-24 px-8">
                 <img
                   className="hidden lg:block absolute middle-0 left-0 h-96 w-64 overflow-visible -z-10 transform -translate-x-8 translate-y-16"
                   height="100"
@@ -94,47 +95,57 @@ export default function Page() {
                   naszej platformy!
                 </p>
               </div>
-              <div className="flex-1 flex justify-center items-center relative">
-                <Card className="w-full flex flex-col justify-center items-center relative">
-                  <img
-                    className="absolute top-0 right-0 h-36 w-36 overflow-visible -z-10 transform translate-x-6 -translate-y-6"
-                    height="100"
-                    src="/report_figure_3.png"
-                    style={{
-                      aspectRatio: "100/100",
-                      objectFit: "cover",
-                    }}
-                    width="100"
-                  />
-                  <CardHeader className="flex flex-col items-center relative">
+              <div className="flex-1 flex justify-center items-center pb-4 relative">
+                <form
+                  action={(form) =>
+                    sendEmail(
+                      form.get("subject"),
+                      FeedbackTemplate({ content: form.get("feedback") })
+                    )
+                  }
+                >
+                  <Card className="flex flex-col justify-center items-center pb-8 relative">
                     <img
-                      alt="FeedBack"
-                      className="w-64 h-64 rounded-full object-cover mt-4"
-                      height={100}
-                      src="/feedback.png"
+                      className="absolute top-0 right-0 h-36 w-36 overflow-visible -z-10 transform translate-x-6 -translate-y-6"
+                      height="100"
+                      src="/report_figure_3.png"
                       style={{
                         aspectRatio: "100/100",
                         objectFit: "cover",
                       }}
-                      width={100}
+                      width="100"
                     />
-                    <CardTitle className="self-center text-3xl lg:text-4xl text-center font-normal text-black">
-                      Podziel się z nami swoją opinią
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="self-center pt-4 pb-12">
-                    <Textarea
-                      className="mb-4 bg-white"
-                      placeholder="Maksymalnie 250 znaków"
-                    />
+                    <CardHeader className="flex flex-col items-center relative">
+                      <img
+                        alt="FeedBack"
+                        className="w-64 h-64 rounded-full object-cover mt-4"
+                        height={100}
+                        src="/feedback.png"
+                        style={{
+                          aspectRatio: "100/100",
+                          objectFit: "cover",
+                        }}
+                        width={100}
+                      />
+                      <CardTitle className="self-center text-3xl lg:text-4xl text-center font-normal text-black">
+                        Podziel się z nami swoją opinią
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="self-center pt-4 pb-4">
+                      <Textarea
+                        placeholder="Maksymalnie 250 znaków"
+                        name="feedback"
+                      />
+                      <input type="hidden" name="subject" value="Feedback" />
+                    </CardContent>
                     <Button
-                      className="w-full bg-muala rounded-full"
+                      className="w-36 justify-center items-center bg-muala rounded-full"
                       onClick={() => setIsSend(true)}
                     >
                       PRZEŚLIJ
                     </Button>
-                  </CardContent>
-                </Card>
+                  </Card>
+                </form>
               </div>
             </div>
           </div>
