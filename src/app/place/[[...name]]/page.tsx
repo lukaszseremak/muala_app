@@ -66,9 +66,9 @@ export default async function Page({ params, searchParams }: Params) {
   );
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <div className="flex flex-col w-full max-w-xl mx-auto pt-4 pb-8 px-4">
-        <div className="mt-6 space-y-10">
+    <div className="flex min-h-screen flex-col items-center">
+      <div className="flex flex-col w-auto pt-4 pb-8 ">
+        <div className="space-y-10">
           {restaurants.map((restaurant, _) => (
             <Card key={restaurant.address}>
               <div className="flex flex-col items-center relative text-center">

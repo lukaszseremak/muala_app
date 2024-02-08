@@ -12,7 +12,7 @@ export default async function Page() {
   const router = useRouter();
 
   return (
-    <div className="flex max-w-xl mx-auto">
+    <div className="flex min-h-screen flex-col">
       {isSend ? (
         <div className="flex flex-col max-w-xl mx-auto pt-36">
           <div className="mt-6 space-y-10 relative">
@@ -100,7 +100,9 @@ export default async function Page() {
                   action={(form) =>
                     sendEmail(
                       form.get("subject"),
-                      FeedbackTemplate({ content: form.get("feedback") })
+                      FeedbackTemplate({
+                        content: form.get("feedback") as string,
+                      })
                     )
                   }
                 >

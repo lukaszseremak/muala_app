@@ -18,7 +18,7 @@ export default async function Page() {
         {isSend ? (
           <div className="flex flex-col max-w-xl mx-auto pt-36 px-4">
             <div className="mt-6 space-y-10 relative">
-              <Card className="w-full flex flex-col justify-center items-center relative">
+              <Card className="flex flex-col justify-center items-center relative">
                 <img
                   className="absolute top-0 right-0 h-36 w-36 overflow-visible -z-10 transform translate-x-6 -translate-y-6"
                   height="100"
@@ -69,8 +69,8 @@ export default async function Page() {
             </div>
           </div>
         ) : (
-          <div className="flex justify-center pt-0 lg:pt-48 px-4">
-            <div className="max-w-7xl mx-auto p-6">
+          <div className="flex justify-center pt-0 lg:pt-24 px-4">
+            <div className="lg:max-w-7xl mx-4 w-fit lg:mx-auto p-6">
               <div className="flex flex-col lg:flex-row justify-between gap-10">
                 <div className="flex-1 space-y-6 pt-16 lg:pt-24 relative">
                   <img
@@ -140,16 +140,19 @@ export default async function Page() {
                           className="bg-white rounded-full w-96 h-12"
                           placeholder="Wpisz nazwę lokalu"
                           name="local_name"
+                          required
                         />
                         <Input
                           className="bg-white rounded-full w-96 h-12"
                           placeholder="Wpisz nazwę miasta"
                           name="city"
+                          required
                         />
                         <Input
                           className="bg-white rounded-full w-96 h-12"
                           placeholder="Wklej link do filmu"
                           name="url"
+                          required
                         />
                         <input
                           type="hidden"
