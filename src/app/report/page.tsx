@@ -13,7 +13,7 @@ export default async function Page() {
   const router = useRouter();
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col box-border">
       <div className="px-12">
         {isSend ? (
           <div className="flex flex-col max-w-xl mx-auto pt-36 px-4">

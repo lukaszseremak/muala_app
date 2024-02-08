@@ -66,7 +66,7 @@ export default async function Page({ params, searchParams }: Params) {
   );
 
   return (
-    <div className="flex min-h-screen flex-col items-center">
+    <div className="flex min-h-screen flex-col items-center box-border">
       <div className="flex flex-col w-auto pt-4 pb-8 ">
         <div className="space-y-10">
           {restaurants.map((restaurant, _) => (
