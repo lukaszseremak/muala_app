@@ -66,13 +66,13 @@ export default async function Page({ params, searchParams }: Params) {
   );
 
   return (
-    <div className="flex min-h-screen flex-col items-center box-border ml-3 mr-3">
-      <div className="flex flex-col pt-0 md:pt-4 pb-8 ">
+    <div className="flex min-h-fit flex-col items-center box-border ml-4 mr-4">
+      <div className="flex flex-col pt-0 md:pt-4 pb-8 min-w-full md:min-w-[54vh]">
         <div className="space-y-10">
           {restaurants.map((restaurant, _) => (
             <Card
               key={restaurant.address}
-              className="min-h-[30vh] lg:min-h-[32vh] w-auto lg:min-w-[54vh]"
+              className="min-h-[30vh] lg:min-h-[32vh]"
             >
               <div className="flex flex-col items-center relative text-center">
                 <div className="absolute bottom-1 md:bottom-2 right-5 flex gap-2 flex-row text-center items-center font-montserrat">
