@@ -12,7 +12,7 @@ export default async function Page() {
   const router = useRouter();
 
   return (
-    <div className="flex min-h-screen flex-col box-border">
+    <div className="flex min-h-screen flex-col box-border ml-10 mr-10">
       {isSend ? (
         <div className="flex flex-col max-w-xl mx-auto pt-36">
           <div className="mt-6 space-y-10 relative">
@@ -71,7 +71,7 @@ export default async function Page() {
         <div className="pt-0 lg:pt-48">
           <div>
             <div className="flex flex-col lg:flex-row justify-between gap-10">
-              <div className="flex-1 space-y-6 pt-12 lg:pt-24 px-8">
+              <div className="space-y-6 pt-12 lg:pt-24 px-8">
                 <img
                   className="hidden lg:block absolute middle-0 left-0 h-96 w-64 overflow-visible -z-10 transform -translate-x-8 translate-y-16"
                   height="100"
@@ -95,7 +95,7 @@ export default async function Page() {
                   naszej platformy!
                 </p>
               </div>
-              <div className="flex-1 flex justify-center items-center pb-4 relative">
+              <div className="flex justify-center items-center pb-4 relative">
                 <form
                   action={(form) =>
                     sendEmail(
@@ -133,7 +133,7 @@ export default async function Page() {
                         Podziel się z nami swoją opinią
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="self-center pt-4 pb-4">
+                    <CardContent className="flex w-full justify-center items-center ml-3 mr-3 border">
                       <Textarea
                         placeholder="Maksymalnie 250 znaków"
                         name="feedback"
@@ -141,7 +141,7 @@ export default async function Page() {
                       <input type="hidden" name="subject" value="Feedback" />
                     </CardContent>
                     <Button
-                      className="w-36 justify-center items-center bg-muala rounded-full"
+                      className="w-36 h-8 justify-center items-center bg-muala rounded-full"
                       onClick={() => setIsSend(true)}
                     >
                       PRZEŚLIJ
