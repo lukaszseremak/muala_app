@@ -7,7 +7,7 @@ export default function Home() {
   const [sliderValue, setSliderValue] = useState(20);
   return (
     <>
-      <div className="flex flex-row items-center justify-center w-screen h-screen md:flex-col box-border">
+      <div className="flex flex-row items-center justify-center w-screen min-h-fit md:flex-col box-border pt-24 lg:pt-64">
         <img
           alt="Map background"
           src="/main_view.png"

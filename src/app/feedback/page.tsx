@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { sendEmail } from "../actions";
+import { sendEmail } from "@/app/actions";
 
 export default async function Page() {
   const [isSend, setIsSend] = useState(false);
