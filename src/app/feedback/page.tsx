@@ -14,7 +14,7 @@ export default async function Page() {
   return (
     <div className="flex w-screen mx-auto">
       {isSend ? (
-        <div className="flex flex-col max-w-xl mx-auto pt-36">
+        <div className="flex flex-col max-w-2xl mx-auto pt-36">
           <div className="mt-6 space-y-10 relative">
             <Card className="flex flex-col justify-center items-center relative mx-12 lg:w-full">
               <img
@@ -38,16 +38,16 @@ export default async function Page() {
                   z nimi.
                 </p>
               </CardContent>
-              <Button
-                onClick={() => router.push("/")}
-                className="mx-auto w-64 h-12 bg-light_gray rounded-full shadow-xl"
-              >
-                Wróć do strony głównej
-              </Button>
               <img
-                className="hidden sm:block absolute bottom-0 left-0 h-64 w-full overflow-visible -z-10 transform -translate-x-24 translate-y-16"
+                className="hidden sm:block absolute bottom-0 left-0 h-72 w-full overflow-visible -z-10 transform -translate-x-24 translate-y-16"
                 src="/report_figure_4.png"
               />
+              <Button
+                onClick={() => router.push("/")}
+                className="absolute bottom-0 transform translate-y-28 w-64 h-12 bg-light_gray rounded-full shadow-xl"
+              >
+                <p>Wróć do strony głównej</p>
+              </Button>
             </Card>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default async function Page() {
         <div className="flex justify-center pt-0 lg:pt-24 px-4 md:px-12 w-screen">
           <div className="max-w-7xl mx-auto p-6">
             <div className="flex flex-col lg:flex-row justify-between gap-10">
-              <div className="flex-1 space-y-6 pt-0 lg:pt-24 ml-0 xl:ml-36 relative">
+              <div className="flex-1 space-y-6 pt-0 lg:pt-24 lg:max-w-[28rem] relative">
                 <img
                   className="hidden lg:block absolute middle-0 left-0 h-96 w-68 overflow-visible -z-50 transform -translate-x-4 translate-y-28"
                   src="/report_figure_1.png"
