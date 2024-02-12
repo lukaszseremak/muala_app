@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { sendEmail } from "@/app/actions";
+import { Input } from "@/components/ui/input";
 
 export default async function Page() {
   const [isSend, setIsSend] = useState(false);
@@ -80,6 +81,8 @@ export default async function Page() {
                       form.get("subject"),
                       FeedbackTemplate({
                         content: form.get("feedback") as string,
+                        name: form.get("name") as string,
+                        email: form.get("email") as string,
                       })
                     )
                   }
@@ -105,12 +108,26 @@ export default async function Page() {
                         Podziel się z nami swoją opinią
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="flex w-full justify-center items-center pb-8">
-                      <Textarea
-                        placeholder="Maksymalnie 250 znaków"
-                        name="feedback"
-                      />
-                      <input type="hidden" name="subject" value="Feedback" />
+                    <CardContent className="w-full justify-center items-center pb-8">
+                      <div className="flex-row mx-4 md:mx-16">
+                        <Input
+                          className="bg-white rounded-2xl w-full h-12 mb-2"
+                          placeholder="Imię"
+                          name="name"
+                          required
+                        />
+                        <Input
+                          className="bg-white rounded-2xl w-full h-12 mb-2"
+                          placeholder="E-mail"
+                          name="email"
+                          required
+                        />
+                        <Textarea
+                          placeholder="Maksymalnie 250 znaków"
+                          name="feedback"
+                        />
+                        <input type="hidden" name="subject" value="Feedback" />
+                      </div>
                     </CardContent>
                     <Button
                       className="w-36 h-10 justify-center items-center bg-muala rounded-full shadow-2xl"
