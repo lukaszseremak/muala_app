@@ -2,13 +2,17 @@ import * as React from "react";
 
 interface FeedbackTemplateProps {
   content: string;
+  name: string;
+  email: string;
 }
 
 export const FeedbackTemplate: React.FC<Readonly<FeedbackTemplateProps>> = ({
-  content,
+  content, name, email
 }) => (
   <div>
-    <h1 className="text-center">{content}</h1>
+    <h1 className="text-center">Name: {name}</h1>
+    <h1 className="text-center">Email: {email}</h1>
+    <h1 className="text-center">Content: {content}</h1>
   </div>
 );
 
