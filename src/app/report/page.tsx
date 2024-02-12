@@ -52,7 +52,7 @@ export default async function Page() {
         </div>
       ) : (
         <div className="flex justify-center pt-0 lg:pt-24 px-4 md:px-12 w-screen">
-          <div className="max-w-7xl mx-auto p-6">
+          <div className="max-w-7xl mx-auto p-0 lg:p-6">
             <div className="flex flex-col lg:flex-row justify-between gap-10">
               <div className="flex-1 space-y-6 pt-0 lg:pt-24 lg:max-w-[28rem] relative">
                 <img
@@ -93,13 +93,13 @@ export default async function Page() {
                   }
                 >
                   <Card className="flex flex-col justify-center items-center pb-12 relative">
-                    <CardHeader className="flex flex-col items-center relative p-36 pb-4 pt-0">
+                    <CardHeader className="flex flex-col items-center relative px-24 sm:px-40 md:px-44 pb-4 pt-0">
                       <img
                         alt="Pin"
                         className="lg:w-48 lg:h-48 w-36 h-36 rounded-full object-cover mt-4"
                         src="/ksiazulo_pin.png"
                       />
-                      <CardTitle className="self-center text-2xl lg:text-4xl text-center font-normal text-black pb-2">
+                      <CardTitle className="self-center text-2xl lg:text-4xl text-center font-normal text-black pb-2 whitespace-nowrap">
                         Zgłoś MUALA
                       </CardTitle>
                       <hr className="w-full border-black mx-auto" />
@@ -140,7 +140,7 @@ export default async function Page() {
                   </Card>
                 </form>
                 <img
-                  className="hidden md:block absolute bottom-0 right-0 h-68 w-58 overflow-visible -z-10 transform translate-x-1/4 translate-y-10"
+                  className="hidden lg:block absolute bottom-0 right-0 h-68 w-58 overflow-visible -z-10 transform translate-x-1/4 translate-y-10"
                   src="/report_figure_1.png"
                 />
               </div>
