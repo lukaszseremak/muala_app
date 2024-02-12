@@ -27,8 +27,8 @@ export default function MainForm({
         className="flex items-center gap-2 place-content-center justify-center place-self-center pt-6"
         onSubmit={handleSubmit}
       >
-        <div className="max-w-md ">
-          <div className="relative">
+        <div className="max-w-md items-center justify-center ">
+          <div className="relative items-center justify-center">
             <Input
               className="pl-10 pr-20 rounded-full font-barlow"
               placeholder="Wpisz nazwę miasta"
@@ -49,13 +49,15 @@ export default function MainForm({
             <h1 className="pt-10 mb-8 text-2xl text-dark_gray font-piazzolla text-center">
               LUB
             </h1>
-            <Button
-              onClick={() => setSliderValue("")}
-              type="submit"
-              className="absolute bottom-0 transform translate-x-12 translate-y-20 w-64 h-12 rounded-full shadow-lg text-center text-medium_gray bg-[#f5c188] font-piazzolla"
-            >
-              wyświetl wszystko
-            </Button>
+            <div className="items-center justify-center">
+              <Button
+                onClick={() => setSliderValue("")}
+                type="submit"
+                className="items-center justify-center w-full h-12 rounded-full shadow-lg text-center text-medium_gray bg-[#f5c188] font-piazzolla"
+              >
+                wyświetl wszystko
+              </Button>
+            </div>
           </div>
         </div>
       </form>
