@@ -105,7 +105,7 @@ export default async function Page() {
                         Podziel się z nami swoją opinią
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="flex w-full justify-center items-center pb-8 border">
+                    <CardContent className="flex w-full justify-center items-center pb-8">
                       <Textarea
                         placeholder="Maksymalnie 250 znaków"
                         name="feedback"

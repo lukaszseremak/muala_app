@@ -20,10 +20,6 @@ const navLinks: NavItem[] = [
     href: "/buy_coffee",
   },
   {
-    title: "Feedback",
-    href: "/feedback",
-  },
-  {
     title: "Kontakt",
     href: "/contact",
   },

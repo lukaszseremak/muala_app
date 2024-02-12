@@ -78,7 +78,7 @@ export default async function Page({ params, searchParams }: Params) {
                 <div className="absolute bottom-1 md:bottom-2 right-5 flex gap-2 flex-row text-center items-center font-montserrat">
                   <div className="rounded-full p-2 flex bg-grayish_pink ">
                     <Link href={restaurant.google_maps_url} target="_blank">
-                      <NavigationIcon className="w-4 md:w-7 h-4 md:h-7" />
+                      <NavigationIcon className="w-4 md:w-7 h-4 md:h-7 text-black" />
                     </Link>
                   </div>
                   <button className="rounded-full bg-grayish_pink p-2 flex">

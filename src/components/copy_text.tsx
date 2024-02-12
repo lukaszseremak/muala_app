@@ -37,8 +37,8 @@ export const CopyText = ({ content }: { content: string }) => {
       <div>
         <Match
           value={iconToShow}
-          copy={() => <CopyIcon className="w-4 md:w-7 h-4 md:h-7" />}
-          copied={() => <CheckIcon className="w-4 md:w-7 h-4 md:h-7" />}
+          copy={() => <CopyIcon className="w-4 md:w-7 h-4 md:h-7 text-black" />}
+          copied={() => <CheckIcon className="w-4 md:w-7 h-4 md:h-7 text-black" />}
         />
       </div>
     </div>
