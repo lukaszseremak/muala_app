@@ -45,7 +45,7 @@ export default function Home() {
               </h1>
               <img
                 src="/muala.png"
-                className="w-32 h-16 lg:h-32 pl-2 text-center items-center justify-center"
+                className="lg:w-48 w-32 h-16 lg:h-24 pl-2 text-center items-center justify-center"
               />
             </div>
             <h1 className="mb-8 text-4xl lg:text-7xl text-dark_gray font-yeseva_one text-center items-center justify-center">
@@ -64,7 +64,6 @@ export default function Home() {
                 className="flex items-center gap-2 place-content-center justify-center place-self-center pt-6"
                 onSubmit={handleSubmit}
               >
-                <div className="max-w-md items-center justify-center ">
                   <div className="relative items-center justify-center">
                     <Input
                       className="pl-10 pr-20 rounded-full font-barlow"
@@ -79,6 +78,7 @@ export default function Home() {
                     >
                       <SearchIcon className="w-16 h-16 text-white rounded-full bg-muala" />
                     </Button>
+                    <div className="px-4">
                     <h1 className="text-center py-8 text-medium_gray">
                       maksymalna odległość
                     </h1>
@@ -109,9 +109,9 @@ export default function Home() {
                       >
                         wyświetl wszystko
                       </Button>
+                      </div>
                     </div>
                   </div>
-                </div>
               </form>
             </div>
           </div>
