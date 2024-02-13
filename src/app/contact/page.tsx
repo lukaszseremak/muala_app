@@ -54,14 +54,14 @@ export default async function Page() {
         </div>
       ) : (
         <div className="flex justify-center pt-0 lg:pt-24 px-4 md:px-12 w-screen">
-          <div className="max-w-7xl mx-auto p-6">
+          <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col lg:flex-row justify-between gap-10">
               <div className="flex-1 space-y-6 pt-0 lg:pt-24 lg:max-w-[28rem] relative">
                 <img
                   className="hidden lg:block absolute middle-0 left-0 h-96 w-68 overflow-visible -z-50 transform -translate-x-4 translate-y-28"
                   src="/report_figure_1.png"
                 />
-                <h1 className="text-2xl font-playfair_display font-bold text-muala text-center pb-8">
+                <h1 className="text-2xl font-playfair_display font-bold text-muala text-center pb-4 lg:pb-8">
                   TWOJA OPINIA MA DLA NAS OGROMNE ZNACZENIE!
                 </h1>
                 <p className="text-dark_gray text-center">
@@ -92,7 +92,7 @@ export default async function Page() {
                       className="absolute top-0 right-0 h-52 w-42 overflow-visible -z-50 transform translate-x-8 -translate-y-8"
                       src="/report_figure_3.png"
                     />
-                    <CardHeader className="flex flex-col items-center relative p-14">
+                    <CardHeader className="flex flex-col items-center relative max-w-[40rem]">
                       <img
                         alt="FeedBack"
                         className="w-64 h-64 rounded-full object-cover mt-4"
@@ -104,20 +104,20 @@ export default async function Page() {
                         }}
                         width={100}
                       />
-                      <CardTitle className="self-center text-3xl lg:text-4xl text-center font-normal text-black">
-                        Podziel się z nami swoją opinią
+                      <CardTitle className="self-center text-2xl lg:text-4xl mx-4 text-center font-normal text-black">
+                        Podziel się z nami swoją opinią lub napisz do nas
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="w-full justify-center items-center pb-8">
+                    <CardContent className="w-full justify-center items-center pb-8 pt-4">
                       <div className="flex-row mx-4 md:mx-16">
                         <Input
-                          className="bg-white rounded-2xl w-full h-12 mb-2"
+                          className="bg-white rounded-2xl w-full h-12 mb-2 text-md lg:text-lg"
                           placeholder="Imię"
                           name="name"
                           required
                         />
                         <Input
-                          className="bg-white rounded-2xl w-full h-12 mb-2"
+                          className="bg-white rounded-2xl w-full h-12 mb-2 text-md lg:text-lg"
                           placeholder="E-mail"
                           name="email"
                           required

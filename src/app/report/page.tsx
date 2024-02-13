@@ -107,19 +107,19 @@ export default async function Page() {
                     <CardContent className="w-full justify-center items-center pb-4 pt-2">
                       <div className="flex-row mx-4 md:mx-24">
                         <Input
-                          className="bg-white rounded-full w-full h-12 mb-4"
+                          className="bg-white rounded-full w-full h-12 mb-4 text-md lg:text-lg"
                           placeholder="Wpisz nazwę lokalu"
                           name="local_name"
                           required
                         />
                         <Input
-                          className="bg-white rounded-full w-full h-12 mb-4"
+                          className="bg-white rounded-full w-full h-12 mb-4 text-md lg:text-lg"
                           placeholder="Wpisz nazwę miasta"
                           name="city"
                           required
                         />
                         <Input
-                          className="bg-white rounded-full w-full h-12 mb-4"
+                          className="bg-white rounded-full w-full h-12 mb-4 text-md lg:text-lg"
                           placeholder="Wklej link do filmu"
                           name="url"
                           required
