@@ -17,7 +17,7 @@ const navLinks: NavItem[] = [
   },
   {
     title: "Kup Nam Kawkę",
-    href: "/buy_coffee",
+    href: "https://buycoffee.to/mualaapp",
   },
   {
     title: "Kontakt",

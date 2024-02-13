@@ -65,13 +65,18 @@ export default async function Page() {
                   TWOJA OPINIA MA DLA NAS OGROMNE ZNACZENIE!
                 </h1>
                 <p className="text-dark_gray text-center">
-                  Jeśli masz pomysł, jak jeszcze bardziej usprawnić naszą stronę
-                  lub coś, co chciałbyś zobaczyć na naszym portalu, to teraz
-                  masz okazję podzielić się swoimi myślami. Napisz nam krótki
-                  feedback za pomocą poniższego formularza, a Twoje sugestie
-                  pomogą nam tworzyć lepsze i bardziej dostosowane do Twoich
-                  oczekiwań doświadczenie online. Dziękujemy za współtworzenie
-                  naszej platformy!
+                  Jesteśmy bardzo zainteresowani Twoją opinią i sugestiami
+                  dotyczącymi doskonalenia naszego serwisu. Jeśli masz pomysł,
+                  jak możemy jeszcze bardziej ulepszyć naszą stronę lub gdy masz
+                  jakiekolwiek sugestie dotyczące zawartości, którą chciałbyś
+                  zobaczyć na naszym portalu, prosimy o podzielenie się nimi za
+                  pomocą poniższego formularza. Twój feedback pomoże nam
+                  dostosować naszą ofertę do Twoich oczekiwań i stworzyć lepsze
+                  doświadczenie online. Ponadto, jeśli masz inne pytania lub
+                  chcesz skontaktować się z nami w innym celu, również
+                  serdecznie zachęcamy do skorzystania z formularza. Jesteśmy
+                  otwarci na wszelkie uwagi i z przyjemnością odpowiemy na Twoje
+                  zapytania.
                 </p>
               </div>
               <div className="flex justify-center items-center pb-4 relative">
@@ -104,7 +109,7 @@ export default async function Page() {
                         }}
                         width={100}
                       />
-                      <CardTitle className="self-center text-2xl lg:text-4xl mx-4 text-center font-normal text-black">
+                      <CardTitle className="self-center text-2xl lg:text-3xl mx-6 lg:mx-16 text-center font-normal text-black">
                         Podziel się z nami swoją opinią lub napisz do nas
                       </CardTitle>
                     </CardHeader>
