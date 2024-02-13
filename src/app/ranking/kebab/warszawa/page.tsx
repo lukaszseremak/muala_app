@@ -30,7 +30,7 @@ export default async function Page() {
 
   return (
     <div className="flex min-h-fit flex-col items-center box-border ml-4 mr-4">
-      <div className="flex flex-col pt-0 md:pt-4 pb-8 w-full md:w-[54vh]">
+      <div className="flex flex-col pt-0 md:pt-4 pb-8">
         <div className="space-y-10">
           {kebabs.map((kebab, _) => (
             <Card key={kebab.address} className="min-h-[23vh] lg:min-h-[28vh]">

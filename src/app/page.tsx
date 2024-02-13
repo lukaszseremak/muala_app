@@ -32,11 +32,11 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-row items-center justify-center w-screen min-h-fit md:flex-col box-border pt-24 lg:pt-64">
-        <img
+        {/* <img
           alt="Map background"
           src="/main_view.png"
           className="hidden lg:block absolute right-0 top-0 overflow-hidden w-5/12 object-fit max-h-full min-h-full"
-        />
+        /> */}
         <div className="relative z-10 lg:right-36 bottom-20 mx-8">
           <div className="flex flex-col">
             <div className="flex flex-row text-center items-center justify-center">
