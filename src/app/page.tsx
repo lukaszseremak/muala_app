@@ -66,7 +66,7 @@ export default function Home() {
               >
                   <div className="relative items-center justify-center">
                     <Input
-                      className="pl-10 pr-20 rounded-full font-barlow"
+                      className="pl-10 pr-20 rounded-full font-barlow text-medium_gray"
                       placeholder="Wpisz nazwę miasta"
                       type="search"
                       value={inputVal}
@@ -79,7 +79,7 @@ export default function Home() {
                       <SearchIcon className="w-16 h-16 text-white rounded-full bg-muala" />
                     </Button>
                     <div className="px-4">
-                    <h1 className="text-center py-8 text-medium_gray">
+                    <h1 className="text-center py-8 text-medium_gray font-montserrat">
                       maksymalna odległość
                     </h1>
                     <Slider
@@ -89,14 +89,14 @@ export default function Home() {
                       step={1}
                       onValueChange={handleSliderChange}
                     />
-                    <div className="flex flex-row pt-6 items-center justify-center space-x-1 text-medium_gray">
+                    <div className="flex flex-row pt-6 items-center justify-center space-x-1 text-medium_gray font-montserrat">
                       <p>+</p>
                       <Input
                         value={sliderValue}
                         onChange={handleInputChange}
                         className="w-[60px] h-8 bg-light_gray focus-visible:ring-0 text-center"
                       />
-                      <p>km</p>
+                      <p className="font-montserrat">km</p>
                     </div>
                     <h1 className="pt-10 mb-8 text-2xl text-dark_gray font-piazzolla text-center">
                       LUB
@@ -105,7 +105,7 @@ export default function Home() {
                       <Button
                         onClick={() => setSliderValue("")}
                         type="submit"
-                        className="items-center justify-center w-full h-12 rounded-full shadow-lg text-center text-medium_gray bg-[#f5c188] font-piazzolla"
+                        className="items-center justify-center w-full h-12 rounded-full shadow-lg text-center text-dark_gray bg-light_muala hover:bg-muala font-montserrat"
                       >
                         wyświetl wszystko
                       </Button>

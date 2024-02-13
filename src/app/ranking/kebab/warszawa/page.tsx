@@ -32,6 +32,7 @@ export default async function Page() {
     <div className="flex min-h-fit flex-col items-center box-border ml-4 mr-4">
       <div className="flex flex-col pt-0 md:pt-4 pb-8">
         <div className="space-y-10">
+          <p className="font-piazzolla text-center text-lg text-dark_gray w-auto lg:max-w-[48rem]">Kebabowa Warszawa to lista restauracji kebab na terenie miasta Warszawa, która została zrecenzowana przez Szymona “Książula” Nyczkę oraz  Wojka i oceniona w skali od 1- 10 w kwestii smaku.</p>
           {kebabs.map((kebab, _) => (
             <Card key={kebab.address} className="min-h-[23vh] lg:min-h-[28vh]">
               <div className="flex flex-col items-center relative text-center">

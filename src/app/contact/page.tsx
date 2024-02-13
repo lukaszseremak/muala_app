@@ -56,27 +56,33 @@ export default async function Page() {
         <div className="flex justify-center pt-0 lg:pt-24 px-4 md:px-12 w-screen">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col lg:flex-row justify-between gap-10">
-              <div className="flex-1 space-y-6 pt-0 lg:pt-24 lg:max-w-[28rem] relative">
+              <div className="flex-1 space-y-2 pt-0 lg:pt-24 lg:max-w-[26rem] relative font-playfair_display">
                 <img
                   className="hidden lg:block absolute middle-0 left-0 h-96 w-68 overflow-visible -z-50 transform -translate-x-4 translate-y-28"
                   src="/report_figure_1.png"
                 />
-                <h1 className="text-2xl font-playfair_display font-bold text-muala text-center pb-4 lg:pb-8">
+                <h1 className="text-xl font-playfair_display_sc text-muala text-center pb-4 lg:pb-8">
                   TWOJA OPINIA MA DLA NAS OGROMNE ZNACZENIE!
                 </h1>
-                <p className="text-dark_gray text-center">
+                <p className="text-dark_gray text-center whitespace-pre-line">
                   Jesteśmy bardzo zainteresowani Twoją opinią i sugestiami
                   dotyczącymi doskonalenia naszego serwisu. Jeśli masz pomysł,
                   jak możemy jeszcze bardziej ulepszyć naszą stronę lub gdy masz
                   jakiekolwiek sugestie dotyczące zawartości, którą chciałbyś
                   zobaczyć na naszym portalu, prosimy o podzielenie się nimi za
-                  pomocą poniższego formularza. Twój feedback pomoże nam
-                  dostosować naszą ofertę do Twoich oczekiwań i stworzyć lepsze
+                  pomocą poniższego formularza.
+                </p>
+
+                <p className="text-dark_gray text-center whitespace-pre-line">
+                  Twój feedback pomoże nam dostosować naszą ofertę do Twoich oczekiwań i stworzyć lepsze
                   doświadczenie online. Ponadto, jeśli masz inne pytania lub
                   chcesz skontaktować się z nami w innym celu, również
-                  serdecznie zachęcamy do skorzystania z formularza. Jesteśmy
-                  otwarci na wszelkie uwagi i z przyjemnością odpowiemy na Twoje
-                  zapytania.
+                  serdecznie zachęcamy do skorzystania z formularza.
+                  Jesteśmy otwarci na wszelkie uwagi i z przyjemnością odpowiemy na Twoje zapytania.
+                </p>
+
+                <p className="text-dark_gray text-center whitespace-pre-line">
+                Dziękujemy za współtworzenie naszej platformy!
                 </p>
               </div>
               <div className="flex justify-center items-center pb-4 relative">
@@ -116,14 +122,14 @@ export default async function Page() {
                     <CardContent className="w-full justify-center items-center pb-8 pt-4">
                       <div className="flex-row mx-4 md:mx-16">
                         <Input
-                          className="bg-white rounded-2xl w-full h-12 mb-2 text-md lg:text-lg"
+                          className="bg-white rounded-2xl w-full h-12 mb-2 text-md lg:text-lg text-medium_gray"
                           placeholder="Imię"
                           name="name"
                           required
                         />
                         <Input
-                          className="bg-white rounded-2xl w-full h-12 mb-2 text-md lg:text-lg"
-                          placeholder="E-mail"
+                          className="bg-white rounded-2xl w-full h-12 mb-2 text-md lg:text-lg text-medium_gray"
+                          placeholder="E-mail (Opcjonalny)"
                           name="email"
                           required
                         />
@@ -135,10 +141,10 @@ export default async function Page() {
                       </div>
                     </CardContent>
                     <Button
-                      className="w-36 h-10 justify-center items-center bg-muala rounded-full shadow-2xl"
+                      className="w-36 h-10 justify-center items-center bg-light_muala hover:bg-muala rounded-full shadow-2xl font-playfair_display"
                       onClick={() => setIsSend(true)}
                     >
-                      PRZEŚLIJ
+                      WYŚLIJ
                     </Button>
                   </Card>
                 </form>

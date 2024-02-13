@@ -56,7 +56,7 @@ export default function NavMenu() {
           )}
         </div>
         <div className="hidden menu md:block md:w-auto" id="navbar">
-          <ul className="flex space-x-8 lg:space-x-12 xl:space-x-24 2xl:space-x-36 pl-16 lg:pl-36">
+          <ul className="flex space-x-8 lg:space-x-12 xl:space-x-24 2xl:space-x-36 pl-12 lg:pl-36">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink navItem={link} setNavbarOpen={setNavbarOpen}/>

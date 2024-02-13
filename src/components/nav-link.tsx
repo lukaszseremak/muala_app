@@ -9,7 +9,7 @@ export default function NavLink({ navItem, setNavbarOpen }) {
   return (
     <Link
       href={navItem.href}
-      className="block text-dark_gray rounded text-lg md:text-base lg:text-lg md:p-0 hover:text-muala font-piazzolla text-center"
+      className="block text-dark_gray rounded text-2xl md:text-lg lg:text-xl md:p-0 hover:text-muala font-abhaya_libre"
       onClick={handleClick}
     >
       {navItem.title}

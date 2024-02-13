@@ -32,20 +32,23 @@ export default async function Page() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="self-center pb-12 pt-4">
-                <p className="text-gray-600 text-center mb-6 mx-2 md:mx-8">
-                  Zostanie ono dodane do naszej mapy po weryfikacji
+                <p className="text-gray-600 text-center mx-4 md:mx-8 font-montserrat">
+                  Zostanie ono dodane do naszej
+                </p>
+                <p className="text-gray-600 text-center mb-6 mx-4 md:mx-8 font-montserrat">
+                  mapy po weryfikacji
                   wiarygodności.
                 </p>
               </CardContent>
               <img
-                className="hidden sm:block absolute bottom-0 left-0 h-72 w-full overflow-visible -z-10 transform -translate-x-24 translate-y-16"
+                className="hidden sm:block absolute bottom-0 left-0 h-64 overflow-visible -z-10 transform -translate-x-24 translate-y-16"
                 src="/report_figure_4.png"
               />
               <Button
                 onClick={() => router.push("/")}
                 className="absolute bottom-0 transform translate-y-28 w-64 h-12 bg-light_gray rounded-full shadow-xl"
               >
-                <p>Wróć do strony głównej</p>
+                <p className="font-playfair_display">Wróć do strony głównej</p>
               </Button>
             </Card>
           </div>
@@ -54,12 +57,12 @@ export default async function Page() {
         <div className="flex justify-center pt-0 lg:pt-24 px-4 md:px-12 w-screen">
           <div className="max-w-7xl mx-auto p-0 lg:p-6">
             <div className="flex flex-col lg:flex-row justify-between gap-10">
-              <div className="flex-1 space-y-6 pt-0 lg:pt-24 lg:max-w-[28rem] relative">
+              <div className="flex-1 space-y-6 pt-0 lg:pt-24 lg:max-w-[26rem] relative font-playfair_display text-md">
                 <img
                   className="hidden lg:block absolute middle-0 left-0 h-96 w-68 overflow-visible -z-50 transform -translate-x-4 translate-y-28"
                   src="/report_figure_1.png"
                 />
-                <h1 className="text-2xl font-playfair_display font-bold text-muala text-center pb-2 lg:pb-8">
+                <h1 className="text-2xl font-playfair_display_sc text-muala text-center pb-3 lg:pb-8 px-4">
                   PRZEOCZYLIŚMY MUALA W TWOJEJ OKOLICY?
                 </h1>
                 <p className="text-dark_gray text-center">
@@ -132,7 +135,7 @@ export default async function Page() {
                       </div>
                     </CardContent>
                     <Button
-                      className="w-36 h-10 justify-center items-center bg-muala rounded-full shadow-3xl text-lg"
+                      className="w-36 h-10 justify-center items-center bg-light_muala hover:bg-muala rounded-full shadow-3xl text-lg font-playfair_display"
                       onClick={() => setIsSend(true)}
                     >
                       ZGŁOŚ
